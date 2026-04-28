@@ -2,50 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Scientific Calculator</title>
-
-  <!-- Link CSS -->
+  <title>Calculator</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="calculator">
-    <input type="text" id="display" readonly>
+<div class="calculator">
+  <input type="text" id="display" readonly>
 
-    <div class="buttons">
-      <!-- Scientific -->
-      <button onclick="applyFunction('sqrt')">√</button>
-      <button onclick="applyFunction('pow')">x²</button>
-      <button onclick="applyFunction('sin')">sin</button>
-      <button onclick="applyFunction('cos')">cos</button>
+  <div class="buttons">
+    <button onclick="applyFunction('sqrt')">√</button>
+    <button onclick="applyFunction('pow')">x²</button>
+    <button onclick="applyFunction('sin')">sin</button>
+    <button onclick="applyFunction('cos')">cos</button>
 
-      <!-- Basic -->
-      <button onclick="appendNumber('7')">7</button>
-      <button onclick="appendNumber('8')">8</button>
-      <button onclick="appendNumber('9')">9</button>
-      <button class="operator" onclick="chooseOperator('/')">÷</button>
+    <button onclick="appendNumber('7')">7</button>
+    <button onclick="appendNumber('8')">8</button>
+    <button onclick="appendNumber('9')">9</button>
+    <button onclick="chooseOperator('/')">÷</button>
 
-      <button onclick="appendNumber('4')">4</button>
-      <button onclick="appendNumber('5')">5</button>
-      <button onclick="appendNumber('6')">6</button>
-      <button class="operator" onclick="chooseOperator('*')">×</button>
+    <button onclick="appendNumber('4')">4</button>
+    <button onclick="appendNumber('5')">5</button>
+    <button onclick="appendNumber('6')">6</button>
+    <button onclick="chooseOperator('*')">×</button>
 
-      <button onclick="appendNumber('1')">1</button>
-      <button onclick="appendNumber('2')">2</button>
-      <button onclick="appendNumber('3')">3</button>
-      <button class="operator" onclick="chooseOperator('-')">−</button>
+    <button onclick="appendNumber('1')">1</button>
+    <button onclick="appendNumber('2')">2</button>
+    <button onclick="appendNumber('3')">3</button>
+    <button onclick="chooseOperator('-')">−</button>
 
-      <button onclick="appendNumber('0')">0</button>
-      <button onclick="appendNumber('.')">.</button>
-      <button class="equals" onclick="calculate()">=</button>
-      <button class="operator" onclick="chooseOperator('+')">+</button>
+    <button onclick="appendNumber('0')">0</button>
+    <button onclick="appendNumber('.')">.</button>
+    <button onclick="calculate()">=</button>
+    <button onclick="chooseOperator('+')">+</button>
 
-      <button class="clear" onclick="clearDisplay()" style="grid-column: span 4;">C</button>
-    </div>
+    <button onclick="clearDisplay()" style="grid-column: span 4;">C</button>
   </div>
+</div>
 
-  <!-- Link JS -->
-  <script src="script.js"></script>
+<!-- IMPORTANT: script at bottom -->
+<script src="script.js"></script>
+
 </body>
 </html>
